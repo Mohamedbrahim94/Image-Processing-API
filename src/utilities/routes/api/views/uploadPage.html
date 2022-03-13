@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Image Processing API</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <style type="text/css">
+        body {
+            padding-top: 70px;
+            background-color: gray;
+        }
+        
+        .jumbotron {
+            color: #2c3e50;
+            /*  background: #ecf0f1 */
+            background: black;
+        }
+        
+        .navbar-inverse {
+            background: #2c3e50;
+            color: white;
+        }
+        
+        .navbar-inverse .navbar-brand,
+        .navbar-inverse a {
+            color: white;
+        }
+        
+        .navbar-inverse .navbar-nav>li>a {
+            color: white;
+        }
+        
+        p {
+            text-align: center;
+            color: chartreuse;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+
+
+    </div>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+                <a href="/" class="navbar-brand"><span class="glyphicon glyphicon-picture"></span> Image Processing</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-nav-demo">
+
+                <div style="display: flex;flex-wrap: wrap;justify-content: space-evenly;margin: 20px">
+                    <a href="/ "> Home </a>
+                    <a href="/api/gallery">Gallery</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <br /><br />
+        <h1 class="text-center"> Image processing </h1>
+        <br />
+        <form action="/api/upload" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <input type="file" accept="image/* " name="file" multiple required class="form-control" />
+            </div>
+            //Choose Choose Format:
+
+            <label class="radio-inline"><input type="radio" name="format" value="png" checked />png</label
+      >
+      <label class="radio-inline"
+        ><input type="radio" name="format" value="jpg" />jpg</label
+      >
+      <label class="radio-inline"
+        ><input type="radio" name="format" value="webp" />webp</label
+      >
+      <div class="form-group">
+        <label for="width">Width</label>
+            <input class="form-control" type="number" name="width" id="">
+    </div>
+    <div class="form-group">
+        <label for="height">Height</label>
+        <input class="form-control" type="number" name="height" id="">
+    </div>
+    <div class="form-group ">
+        <button type="submit " value="Upload " class="btn btn-success btn-block "> Upload Image</button>
+    </div>
+    </form>
+    </div>
+    <br>
+    <br>
+    <br>
+
+
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+
+</html>
